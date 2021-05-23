@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "python-auth-api"
 version = "0.1.0"
-description = "An example project for python API best practices with FastAPI"
+description = "An example project for python API best practices with FastAPI and MongoDB"
 authors = ["Kieran Wynn"]
 license = "MIT"
 
