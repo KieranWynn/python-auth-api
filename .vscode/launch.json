@@ -8,10 +8,9 @@
             "name": "API",
             "type": "python",
             "request": "launch",
-            "cwd": "${workspaceFolder}/api",
             "module": "uvicorn",
             "args": [
-                "api:app"
+                "api.api:app"
             ],
             "jinja": true
         }
