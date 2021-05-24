@@ -10,9 +10,16 @@
             "request": "launch",
             "module": "uvicorn",
             "args": [
-                "api.api:app"
+                "api.api:app",
             ],
-            "jinja": true
+            "jinja": true,
+            "autoReload": {
+                "enable": true, 
+                "include": [
+                    "**/*.py",
+                    "**/*.pyw"
+                ]
+            }
         }
     ]
 }
