@@ -11,7 +11,7 @@
             "cwd": "${workspaceFolder}/api",
             "module": "uvicorn",
             "args": [
-                "main:app"
+                "api:app"
             ],
             "jinja": true
         }
