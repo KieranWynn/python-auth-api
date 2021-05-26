@@ -12,6 +12,8 @@ uvicorn = "^0.13.4"
 PyJWT = "^2.1.0"
 python-decouple = "^3.4"
 pydantic = {version = "^1.8.2", extras = ["email"]}
+python-multipart = "^0.0.5"
+passlib = {version = "^1.7.4", extras = ["bcrypt"]}
 
 [tool.poetry.dev-dependencies]
 
