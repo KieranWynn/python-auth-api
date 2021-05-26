@@ -6,7 +6,7 @@ from decouple import config
 
 JWT_SECRET = config("secret")
 JWT_ALGORITHM = config("algorithm")
-TOKEN_LIFETIME = datetime.timedelta(seconds=600)
+TOKEN_LIFETIME = datetime.timedelta(seconds=6)
 
 def token_response(token: str) -> Dict[str, str]:
     return {"access_token": token}
@@ -21,11 +21,4 @@ def encode_jwt(user_id: str) -> Dict[str, str]:
     return token_response(token)
 
 def decode_jwt(token: str) -> Dict[str, str]:
-    try:
-        decoded_token = jwt.decode(jwt=token, key=JWT_SECRET, algorithms=[JWT_ALGORITHM])
-        return decoded_token
-    except jwt.ExpiredSignatureError:
-        # TODO error code
-        return {}
-    except:
-        return {}
+    return jwt.decode(jwt=token, key=JWT_SECRET, algorithms=[JWT_ALGORITHM])

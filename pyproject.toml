@@ -11,6 +11,7 @@ fastapi = "^0.65.1"
 uvicorn = "^0.13.4"
 PyJWT = "^2.1.0"
 python-decouple = "^3.4"
+pydantic = {version = "^1.8.2", extras = ["email"]}
 
 [tool.poetry.dev-dependencies]
 
